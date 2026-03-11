@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="membership.html">Membership</a></li>
+            </ul>
+        </div>
+        <div class="member">
+            <div class="container">
+                <h1>Gym Membership Form</h1>
+
+                <!-- MISTAKE 1 FIXED: removed action and method, added onsubmit -->
+                <form onsubmit="handleSubmit(event)">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+                    
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email.." required>
+                    
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number.." required>
+                    
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                    
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height" name="height" placeholder="Your height in cm.." required>
+                    
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight" name="weight" placeholder="Your weight in kg.." required>
+                    
+                    <label for="membership">Membership Type</label>
+                    <select id="membership" name="membership" required>
+                        <option value="monthly">Monthly</option>
+                        <option value="quarterly">Quarterly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                    
+                    <label for="payment">Payment Method</label>
+                    <select id="payment" name="payment" required>
+                        <option value="credit">Credit Card</option>
+                        <option value="debit">Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bank">Bank Transfer</option>
+                    </select>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- MISTAKE 2 FIXED: popup is now inside body, not outside -->
+    <div id="successPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:9999;">
+        <div style="background:white; padding:40px; border-radius:12px; text-align:center;">
+            <h2 style="color:green;">✔ Payment Successful!</h2>
+            <p>You have successfully paid and now your membership is <strong>ACTIVE</strong> 💪</p>
+            <button onclick="closePopup()" style="margin-top:20px; padding:10px 30px; background:#009688; color:white; border:none; border-radius:8px; cursor:pointer; font-size:16px;">Let's Go!</button>
+        </div>
+    </div>
+
+    <!-- MISTAKE 3 FIXED: script tag is now inside body -->
+    <script src="script.js"></script>
+
+</body>
+<footer>
+            &copy;All Rights Reserved 
+        </footer>
+</html>
