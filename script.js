@@ -1,7 +1,6 @@
 function handleSubmit(event) {
     event.preventDefault();
 
-    // Show the popup
     document.getElementById("successPopup").style.display = "flex";
 }
 

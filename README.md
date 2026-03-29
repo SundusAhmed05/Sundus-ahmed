@@ -18,8 +18,8 @@ This is especially helpful for people with tight schedules who want to start the
 |------|------|-------------|
 | Home | `index.html` | Landing page welcoming visitors |
 | Service | `Service.html` | Overview of gym services offered |
-| About | `About.html` | Information about the fitness club |
-| Help | `help.html` | FAQ section for common questions |
+| About | `About.html` | No linked page |
+| Help | `help.html` | No linked page |
 | Membership | `membership.html` | Online gym membership sign-up form |
 
 
@@ -63,8 +63,6 @@ gui/
 │
 ├── index.html          # Home page
 ├── Service.html        # Services page
-├── About.html          # About page
-├── help.html           # Help / FAQ page
 ├── membership.html     # Membership sign-up page
 ├── style.css           # Main stylesheet
 ├── ACTION.js           # Form submission logic
