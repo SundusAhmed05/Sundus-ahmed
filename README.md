@@ -44,6 +44,17 @@ This project is important because it removes a major barrier for people who want
 - **HTML5** — Page structure and semantic layout across all pages
 - **CSS3** — Styling, Flexbox layout, responsive design, and carousel animations
 - **JavaScript** — Real-time form validation, dynamic payment fields, and popup confirmation
+<<<<<<< HEAD
+=======
+
+### Key Features
+- Online membership registration and payment from home
+- Membership plans: Monthly, Quarterly, Yearly
+- Payment options: Credit Card, Debit Card, PayPal, Bank Transfer
+- Real-time input validation with descriptive error messages
+- Instant "Membership Completed" confirmation on successful signup
+- Fully responsive — works on desktop, tablet, and mobile
+>>>>>>> 2704f9d7008966d193b71ac75d63cfe194d95d13
 
 ### Key Features
 - Online membership registration and payment from home
