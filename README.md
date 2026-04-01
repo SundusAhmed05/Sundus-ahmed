@@ -1,82 +1,54 @@
+## Project Title
+Fitness Club Center — Gym Membership Website
 
-#  Fitness Club Center — Gym Membership Website
+---
 
-A web-based gym membership platform that allows people to sign up for a gym membership online — saving time for people with busy schedules.
+## Research Problem
+How can new gym clients complete their membership registration and payment entirely online, without needing to visit the gym in person? Many people with busy schedules find it frustrating to waste time travelling to a gym just to fill out paperwork and pay. This project solves that problem by providing a fully digital membership signup experience.
 
+---
 
+## Motivation
+This project is important because it removes a major barrier for people who want to join a gym but cannot easily visit in person. By allowing users to sign up, choose a membership plan, and pay online from home, the platform saves time, improves accessibility, and modernises the gym registration process. It is especially useful for people with tight schedules who want to start their fitness journey without unnecessary delays.
 
-## About the Project
+---
 
-Fitness Club Center is a website that makes it easy for anyone to join a gym without having to visit in person. Instead of taking time out of a busy day to go to the gym just to fill out paperwork, users can sign up online from anywhere, at any time.
+## Control Flow
+1. User visits the website and lands on the Home page
+2. User navigates to the Membership page
+3. Membership registration form is displayed
+4. User fills in personal details (name, age, gender, height, weight, phone, email)
+5. User selects a membership type (Monthly, Quarterly, or Yearly)
+6. User selects a payment method and enters payment details
+7. User clicks Submit
+   - If input is **invalid** → error message is shown guiding the user to fix their input
+   - If input is **valid** → "Membership Completed" confirmation message is displayed
+8. User may re-enter data or close the session
 
-This is especially helpful for people with tight schedules who want to start their fitness journey without the hassle of an in-person visit.
+---
 
+## Implementation Strategy
 
+### Code Structure
+| File | Description |
+|------|-------------|
+| index.html | Landing page welcoming visitors |
+| Service.html | Overview of gym services offered |
+| membership.html | Online membership sign-up form |
+| About | No linked page |
+| Help | No linked page |
+| style.css | Main stylesheet — layout, design, responsiveness |
+| script.js | Form validation and confirmation popup logic |
 
-##  Pages
+### Modules & Logic
+- **HTML5** — Page structure and semantic layout across all pages
+- **CSS3** — Styling, Flexbox layout, responsive design, and carousel animations
+- **JavaScript** — Real-time form validation, dynamic payment fields, and popup confirmation
 
-| Page | File | Description |
-|------|------|-------------|
-| Home | `index.html` | Landing page welcoming visitors |
-| Service | `Service.html` | Overview of gym services offered |
-| About | `About.html` | No linked page |
-| Help | `help.html` | No linked page |
-| Membership | `membership.html` | Online gym membership sign-up form |
-
-
-
-## Membership Form Features
-
-The membership form collects:
-
-- First Name & Last Name
-- Email Address
-- Phone Number
-- Date of Birth
-- Gender
-- Height & Weight
-- Membership Type (Monthly, Quarterly, Yearly)
-- Payment Method (Credit Card, Debit Card, PayPal, Bank Transfer)
-
-After submitting, users receive a **Payment Successful** confirmation popup confirming their membership is active.
-
-
-
-##  Technologies Used
-
-- **HTML5** — Page structure
-- **CSS3** — Styling and layout
-- **JavaScript** — Form handling and popup confirmation
-
-
-
-##  How to Run
-
-1. Download or clone the project folder
-2. Open `index.html` in any web browser
-3. No installation or server required — it runs directly in the browser
-
-
-##  Project Structure
-
-
-gui/
-│
-├── index.html          # Home page
-├── Service.html        # Services page
-├── membership.html     # Membership sign-up page
-├── style.css           # Main stylesheet
-├── ACTION.js           # Form submission logic
-└── logo.png            # Fitness Club logo
-
-
-
-
-##  Benefits
-
-- **Saves time** — No need to visit the gym just to sign up
-- **Available 24/7** — Sign up anytime, from anywhere
-- **Easy to use** — Simple form with clear steps
-- **Instant confirmation** — Know your membership is active right away
-
-
+### Key Features
+- Online membership registration and payment from home
+- Membership plans: Monthly, Quarterly, Yearly
+- Payment options: Credit Card, Debit Card, PayPal, Bank Transfer
+- Real-time input validation with descriptive error messages
+- Instant "Membership Completed" confirmation on successful signup
+- Fully responsive — works on desktop, tablet, and mobile
